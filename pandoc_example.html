@@ -1,49 +1,52 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="Content-Style-Type" content="text/css" />
-  <meta name="generator" content="pandoc" />
-  <meta name="author" content="Pandoc Markdown Version" />
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="author" content="Pandoc Markdown Version">
   <title>Buttondown Stylesheet Example</title>
   <style type="text/css">code{white-space: pre;}</style>
-  <link rel="stylesheet" href="pandocbd.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="pandocbd.css">
 </head>
 <body>
-<div id="header">
+<header>
 <h1 class="title">Buttondown Stylesheet Example</h1>
 <h2 class="author">Pandoc Markdown Version</h2>
 <h3 class="date">February 2012</h3>
-</div>
-<div id="headers" class="section level1">
+</header>
+<section id="headers" class="level1">
 <h1>Headers</h1>
 <p>Above this, we have the title, author (or subtitle) and date Pandoc metadata. These are specially classed H1, H2 and H3 elements that we just add centering to.</p>
-<div id="level-2" class="section level2">
+<section id="level-2" class="level2">
 <h2>Level 2</h2>
 <p>With Pandoc’s <code>--section-divs</code> option, nested header levels create nested DIVs. This stylesheet creates nested indentation for them to nest visually.</p>
-<div id="level-3" class="section level3">
+<section id="level-3" class="level3">
 <h3>Level 3</h3>
 <p>I should create some auxiliary CSS files that you could include after <code>buttondown.css</code> to change some things like turning off nested indenting.</p>
-<div id="level-4" class="section level4">
+<section id="level-4" class="level4">
 <h4>Level 4</h4>
 <p>Buttondown doesn’t re-define the font size or weight of the headers, but it does define the font families for them as sans- serf.</p>
-<div id="level-5" class="section level5">
+<section id="level-5" class="level5">
 <h5>Level 5</h5>
 <p>It doesn’t re-define the body text font, and it doesn’t make the text body narrow — it leaves it full width. I will probably add a style option file for that.</p>
-<div id="level-6" class="section level6">
+<section id="level-6" class="level6">
 <h6>Level 6</h6>
 <p>Level 6 can be quite small.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="lists" class="section level1">
+</section>
+</section>
+</section>
+</section>
+</section>
+</section>
+<section id="lists" class="level1">
 <h1>Lists</h1>
-<div id="unordered-lists" class="section level2">
+<section id="unordered-lists" class="level2">
 <h2>Unordered lists</h2>
-<div id="a-simple-list" class="section level3">
+<section id="a-simple-list" class="level3">
 <h3>A simple list:</h3>
 <p>Text before</p>
 <ul>
@@ -52,8 +55,8 @@
 <li>Gamma</li>
 </ul>
 <p>Text after</p>
-</div>
-<div id="a-nested-list" class="section level3">
+</section>
+<section id="a-nested-list" class="level3">
 <h3>A nested list:</h3>
 <ul>
 <li>Alpha
@@ -71,13 +74,13 @@
 <li>Pineapple</li>
 </ul></li>
 <li>Gamma (with numbered sublist)
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>One</li>
 <li>Two</li>
 </ol></li>
 </ul>
-</div>
-<div id="a-paragraph-spaced-one" class="section level3">
+</section>
+<section id="a-paragraph-spaced-one" class="level3">
 <h3>A paragraph spaced one:</h3>
 <p>Not all stylesheets make these have more spacing.</p>
 <ul>
@@ -86,23 +89,23 @@
 <li><p>Gamma</p></li>
 </ul>
 <p>And the spacing after might be too tight.</p>
-</div>
-</div>
-<div id="ordered-lists" class="section level2">
+</section>
+</section>
+<section id="ordered-lists" class="level2">
 <h2>Ordered lists</h2>
-<div id="a-simple-one" class="section level3">
+<section id="a-simple-one" class="level3">
 <h3>A simple one:</h3>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>One</li>
 <li>Two</li>
 <li>Three</li>
 </ol>
-</div>
-<div id="a-nested-one" class="section level3">
+</section>
+<section id="a-nested-one" class="level3">
 <h3>A nested one:</h3>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>One
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Alpha</li>
 <li>Beta</li>
 </ol></li>
@@ -112,14 +115,14 @@
 <li>Delta</li>
 </ul></li>
 <li>Three
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Apple
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Circle</li>
 <li>Triangle
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>North
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>East</li>
 <li>West</li>
 </ol></li>
@@ -134,44 +137,44 @@
 <li>Orange</li>
 </ol></li>
 </ol>
-</div>
-</div>
-</div>
-<div id="block-quotes" class="section level1">
+</section>
+</section>
+</section>
+<section id="block-quotes" class="level1">
 <h1>Block Quotes</h1>
 <p>We simply italicize them and don’t do any fancy quote bar or decoration since they are already indented on the left and right.</p>
 <blockquote>
 <p>We simply italicize them and don’t do any fancy quote bar or decoration since they are already indented on the left and right.</p>
 </blockquote>
-</div>
-<div id="code" class="section level1">
+</section>
+<section id="code" class="level1">
 <h1>Code</h1>
 <p>Code blocks are styled more to be set apart a bit more than just the monospaced font. A light background color and border (in case the background doesn’t print, but it looks nice too).</p>
 <pre><code>x = e * 10 / 2;
 y = p - 7;</code></pre>
 <p>On screen, the blocks provide scroll boxes and the <code>inline code spans</code> word wrap. For print, the code blocks also change to word wrap. On screen, the <code>code spans</code> also get a little border, but lose it in print.</p>
-</div>
-<div id="links" class="section level1">
+</section>
+<section id="links" class="level1">
 <h1>Links</h1>
 <p>Remove the underline except on hover. When printing, remove all styling and print external URLs after the link text to be useful in a printout. There is no filter to not print very long URLs though.</p>
 <p>A link to <a href="http://www.google.com">Google</a>. A simple link to <a href="http://wikipedia.org">http://wikipedia.org</a>.</p>
 <p>I haven’t figured out how to not redundantly print the URL after a simple link whose link text is the URL.</p>
-</div>
-<div id="horizontal-rule" class="section level1">
+</section>
+<section id="horizontal-rule" class="level1">
 <h1>Horizontal rule</h1>
 <p>A thin line that doesn’t have that shadow thing that looks terrible, especially in print.</p>
 <hr />
 <p>See the end for what footnotes looks like<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>.</p>
-</div>
-<div id="images" class="section level1">
+</section>
+<section id="images" class="level1">
 <h1>Images</h1>
 <p>An inline image <img src="http://www.jodypaul.com/gr/altair8800Thumb.gif" title="www.jodypaul.com" />.</p>
 <p>A Pandoc figure style image with caption:</p>
-<div class="figure">
-<img src="http://daringfireball.net/graphics/logos/" title="Daring Fireball!" alt="Daring Fireball" /><p class="caption">Daring Fireball</p>
-</div>
-</div>
-<div id="definition-lists" class="section level1">
+<figure>
+<img src="http://daringfireball.net/graphics/logos/" title="Daring Fireball!" alt="Daring Fireball" /><figcaption>Daring Fireball</figcaption>
+</figure>
+</section>
+<section id="definition-lists" class="level1">
 <h1>Definition Lists</h1>
 <p>Still may tweak this. Trying to use subtle lines to help group it, but it feels a bit too table-like. However, without them, it doesn’t seem to stand out much.</p>
 <dl>
@@ -193,47 +196,47 @@ y = p - 7;</code></pre>
 <dd><p>The second definition of Term3. Depending on the stylesheet for HTML you are using or the output format (LaTeX, etc.), this second definition may appear styled as a separate term but without the term itself.</p>
 </dd>
 </dl>
-</div>
-<div id="tables" class="section level1">
+</section>
+<section id="tables" class="level1">
 <h1>Tables</h1>
 <p>These get more styling than most things, yet it’s still very little compared to most table stylings, but way better than an un-styled HTML table. It’s to emulate a simple textbook style, but we throw in a hover row highlight to be a little useful on-screen when scrubbing around the table.</p>
 <table>
 <caption>Demonstration of simple table syntax.</caption>
 <thead>
 <tr class="header">
-<th align="right">Right</th>
-<th align="left">Left</th>
-<th align="center">Center</th>
-<th align="left">Default</th>
+<th style="text-align: right;">Right</th>
+<th style="text-align: left;">Left</th>
+<th style="text-align: center;">Center</th>
+<th style="text-align: left;">Default</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="right">12</td>
-<td align="left">12</td>
-<td align="center">12</td>
-<td align="left">12</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: left;">12</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: left;">12</td>
 </tr>
 <tr class="even">
-<td align="right">123</td>
-<td align="left">123</td>
-<td align="center">123</td>
-<td align="left">123</td>
+<td style="text-align: right;">123</td>
+<td style="text-align: left;">123</td>
+<td style="text-align: center;">123</td>
+<td style="text-align: left;">123</td>
 </tr>
 <tr class="odd">
-<td align="right">1</td>
-<td align="left">1</td>
-<td align="center">1</td>
-<td align="left">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">1</td>
 </tr>
 </tbody>
 </table>
-</div>
-<div class="footnotes">
+</section>
+<section class="footnotes">
 <hr />
 <ol>
 <li id="fn1"><p>A double-line rule with the word “NOTES” in the center.<a href="#fnref1">↩</a></p></li>
 </ol>
-</div>
+</section>
 </body>
 </html>
